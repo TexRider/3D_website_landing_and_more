@@ -214,6 +214,17 @@ body {
     @apply container relative min-h-[93vh] mx-auto px-5 mt-40;
   }
 
+  #product-viewer .viewer-canvas-wrapper {
+    @apply w-full relative z-40;
+    height: 80vh;
+  }
+
+  @media (min-width: 1024px) {
+    #product-viewer .viewer-canvas-wrapper {
+      height: 100dvh;
+    }
+  }
+
   @media (min-width: 1536px) {
     #product-viewer {
       @apply px-0;
@@ -271,7 +282,7 @@ body {
     @apply size-8 rounded-full cursor-pointer bg-white text-black flex-center;
   }
 
-  #product-viewer #canvas {
+  /* #product-viewer #canvas {
     @apply w-full h-[80vh] relative z-40;
   }
 
@@ -279,7 +290,7 @@ body {
     #product-viewer #canvas {
       @apply h-dvh;
     }
-  }
+  } */
 
   #showcase {
     @apply relative;
